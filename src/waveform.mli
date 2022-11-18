@@ -60,6 +60,8 @@ type 'a with_options =
 
 val sort_ports_and_formats : t -> Display_rules.t option -> Wave.t array
 
+val to_buffer : (t -> Buffer.t) with_options
+
 (** Convert waveform to a string. *)
 val to_string : (t -> string) with_options
 
